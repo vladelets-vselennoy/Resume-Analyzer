@@ -37,29 +37,39 @@ class FieldExtractor:
 
     def extract_fields(self,resume_text):
 
-        prompt="""Extract the following information from the resume text if no available then write N/A and response must be in JSON Format
-        {
-        "Name":"",
-    
-        "Phone":"",
-        "Email":""
-        "City":"",
-        "State":"",
-        "University":"",
-        "Year_of_study":"",
-        "Course":"",
-        "Discipline":"",
-        "CGPA": "",
-        "Key_Skills": ,"
-        "GenAI_Experience_Score": "",
-        "AI_ML_Experience_Score": "",
-     
-        "Internships":"",
-        "Projects":""
-        "Certifications":""
-        "Other_Achievements":""
-        "Total_Experience":"in years only"
-        }"""
+        prompt="""Extract information from the resume text and format as a flat JSON with these exact fields. 
+    Use 'N/A' for missing information. Do not create nested structures, lists, or dictionaries within values.
+    For multiple items like projects or skills, combine them with commas in a single string.
+
+    Required output format:
+    {
+        "Name": "full name as string",
+        "Phone": "phone number as string",
+        "Email": "email address",
+        "City": "city name or N/A",
+        "State": "state name or N/A",
+        "University": "full university name",
+        "Year_of_study": "only graduation year",
+        "Course": "degree type",
+        "Discipline": "field of study",
+        "CGPA": "GPA value or N/A",
+        "Key_Skills": "all skills separated by commas",
+        "GenAI_Experience_Score": "score as 1, 2, or 3",
+        "AI_ML_Experience_Score": "score as 1, 2, or 3",
+        "Internships": "all internships separated by commas in Company Name(Designation) Format",
+        "Projects": "all projects separated by commas only title of project ",
+        "Certifications": "all certifications separated by commas",
+        "Other_Achievements": "all achievements separated by commas",
+        "Total_Experience": "calculate total years of experience: add up all work/internship durations, convert months to years (divide by 12), round to 1 decimal place. If experience spans multiple roles or positions, sum all durations. Example: 2 internships of 3 months each = 0.5 years because 3/12+3/12=0.5" 
+    }
+
+    Important:
+    - Combine multiple items into single comma-separated strings
+    - Do not use nested structures or lists
+    - Keep all values as simple strings
+    - Use N/A for missing information
+    - For experience scores, use the scoring criteria below
+    """
         prompt+= self.get_scoring_prompt() + f"Resume text:\n      {resume_text}    "
 
         try:

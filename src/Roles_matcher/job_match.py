@@ -27,7 +27,7 @@ class ResumeMatcher:
         try:
             # Get the directory containing job_match.py
             current_dir = os.path.dirname(os.path.abspath(__file__))
-            json_path = os.path.join(current_dir, 'sample2.json')
+            json_path = os.path.join(current_dir, 'sample.json')
             
             # Check if file exists
             if not os.path.exists(json_path):

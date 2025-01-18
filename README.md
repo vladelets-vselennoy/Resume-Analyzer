@@ -40,8 +40,17 @@ python -m spacy download en_core_web_sm
 
 1. Update `.env` file with your API keys:
 ```
-OPENAI_API_KEY=your_key
-GOOGLE_API_KEY=your_key
+# For Gemini
+GEMINI_API_KEY=your_key
+GEMINI_MODEL=model_name
+
+# For Azure OpenAI
+AZURE_OPENAI_ENDPOINT=endpoint
+AZURE_OPENAI_API_KEY=your api key
+AZURE_OPENAI_MODEL=your model
+AZURE_OPENAI_DEPLOYMENT_NAME=deployment name
+Azure_openAI_API_VERSION=api version
+
 ```
 
 2. Configure job descriptions in `src/Roles_matcher/sample2.json`:
@@ -61,7 +70,7 @@ GOOGLE_API_KEY=your_key
 
 ### Single Resume Analysis
 ```python
-from src.main2 import ResumeAnalyzer
+from src.main import ResumeAnalyzer
 
 analyzer = ResumeAnalyzer()
 result = analyzer.process_single_resume("path/to/resume.pdf")
@@ -69,6 +78,7 @@ result = analyzer.process_single_resume("path/to/resume.pdf")
 
 ### Batch Processing
 ```python
+# in main.py file update google drive url
 url = "google_drive_folder_url"
 analyzer.process_batch(url, "output.xlsx")
 ```
