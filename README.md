@@ -93,20 +93,13 @@ PyMuPDF==1.23.6
 openpyxl==3.1.2
 gdown==4.7.1
 python-dotenv==1.0.0
-openai==0.27.0
+openai>=1
 urllib3==1.26.15
 google-generativeai==0.1.0
 numpy==1.23.5
 scikit-learn==1.3.2
 ```
 
-## Performance
-
-The system demonstrates robust performance metrics:
-
-- Processing speed: ~100 resumes per minute
-- Field extraction accuracy: 95%
-- Job matching accuracy: 90%
 
 ## Key Features
 
@@ -133,6 +126,9 @@ The system demonstrates robust performance metrics:
 - Match scoring
 - Missing skills identification
 
+### New Roles Matching
+- For new roles matching update sample.json in Roles Matcher folder with new job roles with which you wish to match
+
 ## Error Handling
 
 ### PDF Issues
@@ -157,3 +153,5 @@ The system demonstrates robust performance metrics:
 - Report issues via GitHub issue tracker
 - Ask questions in the discussion forum
 - Check release notes for updates and changes
+### Note
+- Loading of Transformers and google drive files download will take a little bit longer time.
