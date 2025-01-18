@@ -1,0 +1,116 @@
+{
+    "jobs": [
+      {
+        "title": "Senior Software Development Engineer",
+        "company": "Microsoft",
+        "location": "Redmond, WA (Hybrid)",
+        "experience": "5+ years",
+        "about_us": "Microsoft's Cloud + AI Division is revolutionizing how enterprises leverage cloud technologies.",
+        "role_overview": "We're seeking an experienced Software Development Engineer to join our Azure team, building scalable cloud services.",
+        "key_responsibilities": [
+          "Design and develop scalable distributed systems",
+          "Lead technical design discussions and architecture reviews",
+          "Mentor junior developers and review code",
+          "Work with product teams to define technical requirements",
+          "Optimize system performance and reliability"
+        ],
+        "requirements": {
+          "mandatory": [
+            "BS/MS in Computer Science or related field",
+            "5+ years of software development experience",
+            "Strong expertise in C#, .NET Core, and REST APIs",
+            "Experience with cloud services (Azure preferred)",
+            "Knowledge of distributed systems and microservices"
+          ],
+          "nice_to_have": [
+            "Experience with Kubernetes and containers",
+            "Contribution to open-source projects",
+            "Knowledge of ML/AI technologies"
+          ]
+        },
+        "benefits": [
+          "Competitive salary ($150K-$220K)",
+          "Annual bonus and stock options",
+          "Comprehensive health coverage",
+          "401(k) matching",
+          "Professional development budget"
+        ],
+        "tags": ["Microsoft", "SoftwareDevelopment", "Cloud", "Engineering"]
+      },
+      {
+        "title": "Senior Cloud Infrastructure Engineer",
+        "company": "AWS",
+        "location": "Remote (US)",
+        "experience": "5+ years",
+        "about_us": "AWS is the leader in cloud computing, helping millions of customers build their digital infrastructure.",
+        "role_overview": "Join our team building the future of cloud infrastructure at AWS.",
+        "key_responsibilities": [
+          "Design and implement cloud infrastructure solutions",
+          "Automate deployment and management processes",
+          "Develop IaC templates using Terraform/CloudFormation",
+          "Optimize cloud costs and performance",
+          "Handle incident response and troubleshooting"
+        ],
+        "requirements": {
+          "mandatory": [
+            "5+ years of cloud infrastructure experience",
+            "AWS Professional certifications",
+            "Strong Python or Go programming skills",
+            "Experience with CI/CD pipelines",
+            "Infrastructure as Code expertise"
+          ],
+          "nice_to_have": [
+            "Multi-cloud experience",
+            "Security certifications",
+            "System design experience"
+          ]
+        },
+        "benefits": [
+          "Base salary: $140K-$200K",
+          "RSU grants",
+          "Health, dental, vision",
+          "Unlimited PTO",
+          "Remote work flexibility"
+        ],
+        "tags": ["AWS", "Cloud", "DevOps", "Infrastructure"]
+      },
+      {
+        "title": "Senior Security Engineer",
+        "company": "Google Cloud Security",
+        "location": "Mountain View, CA",
+        "experience": "7+ years",
+        "about_us": "Join Google's Cloud Security team to protect our global infrastructure.",
+        "role_overview": "Join Google's Cloud Security team to design and implement world-class security solutions.",
+        "key_responsibilities": [
+          "Design and implement security architectures",
+          "Perform security assessments and penetration testing",
+          "Develop automated security controls",
+          "Lead incident response activities",
+          "Collaborate with product teams on security features"
+        ],
+        "requirements": {
+          "mandatory": [
+            "7+ years in information security",
+            "CISSP or equivalent certification",
+            "Experience with cloud security",
+            "Programming skills in Python/Go",
+            "Knowledge of zero-trust architecture"
+          ],
+          "nice_to_have": [
+            "Red team experience",
+            "Cloud security certifications",
+            "Open-source contributions"
+          ]
+        },
+        "benefits": [
+          "Competitive Google salary ($160K-$250K)",
+          "Annual bonus + stock",
+          "Google benefits package",
+          "Learning opportunities",
+          "20% project time"
+        ],
+        "tags": ["Google", "Security", "CloudSecurity", "CyberSecurity"]
+      }
+    ]
+  }
+  

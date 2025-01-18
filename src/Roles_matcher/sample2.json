@@ -1,0 +1,136 @@
+{
+    "jobs": {
+        "ml_engineer": {
+            "title": "Machine Learning Engineer",
+            "company": "TechCorp AI",
+            "location": "New York, NY",
+            "experience_required": "3+ years",
+            "description": "Looking for an experienced ML engineer to develop and deploy machine learning models at scale.",
+            "required_skills": [
+                "Python",
+                "TensorFlow/PyTorch",
+                "MLOps",
+                "Deep Learning",
+                "Cloud Platforms"
+            ],
+            "preferred_skills": [
+                "Kubernetes",
+                "Model Optimization",
+                "Distributed Training"
+            ],
+            "min_scores": {
+                "aiml_score": 2,
+                "genai_score": 1
+            },
+            "salary_range": "120K-180K"
+        },
+        "genai_developer": {
+            "title": "Generative AI Developer",
+            "company": "AI Solutions Inc",
+            "location": "San Francisco, CA",
+            "experience_required": "2+ years",
+            "description": "Join our team building next-generation GenAI applications with focus on RAG and custom agents.",
+            "required_skills": [
+                "LangChain",
+                "RAG",
+                "LLMs",
+                "Prompt Engineering",
+                "Python"
+            ],
+            "preferred_skills": [
+                "Vector Databases",
+                "Custom Agent Development",
+                "Evaluation Frameworks"
+            ],
+            "min_scores": {
+                "aiml_score": 1,
+                "genai_score": 3
+            },
+            "salary_range": "130K-190K"
+        },
+        "data_scientist": {
+            "title": "Senior Data Scientist",
+            "company": "DataTech Solutions",
+            "location": "Boston, MA",
+            "experience_required": "5+ years",
+            "description": "Looking for an experienced data scientist to lead ML initiatives and drive data-driven decisions.",
+            "required_skills": [
+                "Python",
+                "Statistics",
+                "Machine Learning",
+                "SQL",
+                "Data Analysis"
+            ],
+            "preferred_skills": [
+                "Deep Learning",
+                "Big Data Technologies",
+                "Cloud Platforms"
+            ],
+            "min_scores": {
+                "aiml_score": 3,
+                "genai_score": 1
+            },
+            "salary_range": "140K-200K"
+        },
+        "ml_engineer": {
+            "title": "ML Engineer",
+            "description": "Looking for ML engineer with Python and TensorFlow experience",
+            "required_skills": ["Python", "TensorFlow", "ML"],
+            "experience": "2+ years"
+        },
+        "data_scientist": {
+            "title": "Data Scientist",
+            "description": "Need data scientist with ML and analytics background",
+            "required_skills": ["Python", "Statistics", "ML"],
+            "experience": "3+ years"
+        },
+        "mlops_engineer": {
+            "title": "MLOps Engineer",
+            "company": "Cloud AI Corp",
+            "location": "Seattle, WA",
+            "experience_required": "4+ years",
+            "description": "Seeking MLOps engineer to build and maintain ML infrastructure and deployment pipelines.",
+            "required_skills": [
+                "Kubernetes",
+                "Docker",
+                "CI/CD",
+                "Python",
+                "Cloud Platforms"
+            ],
+            "preferred_skills": [
+                "Kubeflow",
+                "MLflow",
+                "Monitoring Tools"
+            ],
+            "min_scores": {
+                "aiml_score": 2,
+                "genai_score": 1
+            },
+            "salary_range": "125K-185K"
+        },
+        "ai_researcher": {
+            "title": "AI Research Scientist",
+            "company": "Research AI Labs",
+            "location": "Cambridge, MA",
+            "experience_required": "5+ years",
+            "description": "Join our research team working on cutting-edge AI algorithms and applications.",
+            "required_skills": [
+                "PhD in AI/ML",
+                "PyTorch",
+                "Research Experience",
+                "Publications",
+                "Deep Learning"
+            ],
+            "preferred_skills": [
+                "NLP",
+                "Computer Vision",
+                "Reinforcement Learning"
+            ],
+            "min_scores": {
+                "aiml_score": 3,
+                "genai_score": 2
+            },
+            "salary_range": "150K-220K"
+        }
+    }
+}
