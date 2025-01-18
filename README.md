@@ -13,20 +13,8 @@ The system consists of four main components:
 
 ### Architecture
 
-```
-mermaid
-flowchart LR
-    A[PDF Resumes] --> B[PDF Parser]
-    B --> C[Field Extractor]
-    C --> D[Job Matcher]
-    D --> E[Excel Output]
-    
-    style A fill:#fce4ec,stroke:#333,stroke-width:2px,color:#333
-    style B fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#333
-    style C fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#333
-    style D fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#333
-    style E fill:#e8f5e9,stroke:#333,stroke-width:2px,color:#333
-```
+![Architecture](media/Architecture.png)
+
 
 ## Output 
 ![OUTPUT](media/Excel.png)
@@ -70,13 +58,13 @@ python -m spacy download en_core_web_sm
 ### 5. Innovation Features
 - **Smart Matching**: 
   - Semantic similarity scoring
-  - Skills gap analysis(In Resume Matcher but not in Output Excel file)
-  - Experience level matching(In Resume Matcher but not in Output Excel file)
+  - Skills gap analysis (In Resume Matcher )
+  - Experience level matching  (In Resume Matcher )
 ### 6. Output Quality
 - **Excel Report Features**:
   - Structured field grouping
   - Color-coded scoring system
-  
+
 ## Configuration
 
 1. Update `.env` file with your API keys:
