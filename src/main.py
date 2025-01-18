@@ -99,10 +99,12 @@ if __name__ == "__main__":
 
     #kindly update your folder url
     url = r"https://drive.google.com/drive/folders/1inuAWgVsqcw4kmGRy45bx1vJ_WkZHKMG?usp=sharing"
-    default_download_dir = os.path.join(os.path.dirname(__file__), 'google_drive_files', 'download')
+    default_download_dir = os.path.join(os.path.dirname(__file__), 'google_drive_files', 'downloads')
+
     output_file = "batch_results.xlsx"
 
-    download_path = download_pdfs_from_folder(url)
-    analyzer.process_batch(download_path,  output_file)
+    # download_path = download_pdfs_from_folder(url)
+    print(default_download_dir)
+    analyzer.process_batch(default_download_dir,  output_file)
     
    

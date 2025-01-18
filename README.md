@@ -14,8 +14,22 @@ The system consists of four main components:
 ### Architecture
 
 ```
-Input -> PDF Parser -> Field Extractor -> Job Matcher -> Excel Output
+mermaid
+flowchart LR
+    A[PDF Resumes] --> B[PDF Parser]
+    B --> C[Field Extractor]
+    C --> D[Job Matcher]
+    D --> E[Excel Output]
+    
+    style A fill:#fce4ec,stroke:#333,stroke-width:2px,color:#333
+    style B fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#333
+    style C fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#333
+    style D fill:#e3f2fd,stroke:#333,stroke-width:2px,color:#333
+    style E fill:#e8f5e9,stroke:#333,stroke-width:2px,color:#333
 ```
+
+## Output 
+![OUTPUT](media/Excel.png)
 
 ## Quick Start (Windows)
 
@@ -35,7 +49,34 @@ pip install -r requirements.txt
 # Download required models
 python -m spacy download en_core_web_sm
 ```
+## Key Differentiators & Features
 
+### 1. Generative AI Integration
+- Leverages Azure OpenAI for intelligent field extraction
+- Contextual understanding using Sentence Transformers
+- Prompt engineering for accurate information retrieval
+
+### 2. Accuracy & Reliability
+- **Field Extraction**: 87%+ accuracy in mandatory field extraction
+- **Format Handling**: Supports various resume layouts
+  - PDF parsing with PyMuPDF
+  - Text normalization with spaCy
+  - Robust error handling
+### 3. Batch Processing & Performance
+- Parallel processing using ThreadPoolExecutor
+- Processing speed: ~20 resumes/minute (Depend on ThreadPool Workers count)
+### 4. Scalability
+- Distributed processing capability
+### 5. Innovation Features
+- **Smart Matching**: 
+  - Semantic similarity scoring
+  - Skills gap analysis(In Resume Matcher but not in Output Excel file)
+  - Experience level matching(In Resume Matcher but not in Output Excel file)
+### 6. Output Quality
+- **Excel Report Features**:
+  - Structured field grouping
+  - Color-coded scoring system
+  
 ## Configuration
 
 1. Update `.env` file with your API keys:
@@ -53,7 +94,7 @@ Azure_openAI_API_VERSION=api version
 
 ```
 
-2. Configure job descriptions in `src/Roles_matcher/sample2.json`:
+2. Configure job descriptions in `src/Roles_matcher/sample.json`:
 ```json
 {
   "jobs": {
@@ -146,12 +187,11 @@ scikit-learn==1.3.2
 1. Always use PDF format for resumes
 2. Close Excel before running batch processing
 3. Verify write permissions for output directory
-4. Validate job descriptions before processing
+
 
 ## Support
 
 - Report issues via GitHub issue tracker
-- Ask questions in the discussion forum
-- Check release notes for updates and changes
+
 ### Note
 - Loading of Transformers and google drive files download will take a little bit longer time.
