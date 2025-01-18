@@ -23,7 +23,7 @@ The system consists of four main components:
 
 ```powershell
 # Clone and setup
-git clone https://github.com/yourusername/resume-analyzer.git
+git clone https://github.com/vladelets-vselennoy/Resume-Analyzer.git
 cd resume-analyzer
 
 # Create virtual environment
